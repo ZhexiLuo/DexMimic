@@ -15,6 +15,8 @@ h2[id], article[id] { scroll-margin-top: 32px; }
 .opening-band > .tldr { padding-bottom: 30px; }
 .introduction > .video-player, .method > figure { max-width: 1000px; margin-inline: auto; }
 .introduction > .video-player { margin-top: 24px; }
+.introduction > .paper-teaser { max-width: 1000px; margin: 28px auto 0; }
+.paper-teaser > a { display: block; }
 .results-section > #benchmark-results, .results-section > .charts-row { max-width: 960px; margin-inline: auto; }
 .results-intro { max-width: 780px; margin-inline: auto; }
 .tldr-summary, .abstract p, .method > p, .results-intro { font-size: 17px; line-height: 1.65; }

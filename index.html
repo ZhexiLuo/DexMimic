@@ -19,9 +19,9 @@
   <link rel="stylesheet" href="static/css/style.css?v=20261011-mono">
   <script type="module" src="static/js/method.js?v=20261010-white-tips"></script>
   <link rel="stylesheet" href="static/css/results.css?v=20261011-review">
-  <link rel="stylesheet" href="static/css/layout.css?v=20261011-pipeline-labels">
+  <link rel="stylesheet" href="static/css/layout.css?v=20261014-paper-teaser">
   <link rel="stylesheet" href="static/css/curtain-previews.css?v=20261011-replay">
-  <link rel="stylesheet" href="static/css/teaser.css?v=20261014-public">
+  <link rel="stylesheet" href="static/css/teaser.css?v=20261014-author-links">
   <script src="static/js/results.js?v=20261011-review" type="module"></script>
   <script src="static/js/trajectories.js?v=20261011-guided-hero" defer></script>
   <script type="module" src="static/js/curtain-previews.js?v=20261011-expanded-replay"></script>
@@ -43,7 +43,7 @@
           <div role="status"><span class="trajectory-spinner" aria-hidden="true"></span><span>Loading visualization…</span></div>
         </div>
         <h1 id="teaser-title"><span class="teaser-name"><span class="dex">Dex</span><span class="mimic">Mimic</span></span><span class="teaser-subtitle">A Generalist Dexterous Hand–Object Tracking Policy<br> via Value-Guided Reset Allocation</span></h1>
-        <p class="hero-authors"><span>Zhexi Luo</span>, <span>Zhixuan Xu</span>, <span>Rui Yang</span>, <span>Zeyu Xiao</span>, <span>Yiwen Hou</span>, <span>Lin Shao</span></p>
+        <p class="hero-authors"><a href="https://zhexiluo.github.io/" target="_blank" rel="noopener">Zhexi Luo</a>, <a href="https://ariszxxu.github.io/" target="_blank" rel="noopener">Zhixuan Xu</a>, <span>Rui Yang</span>, <a href="https://zeyu-xiao.github.io/" target="_blank" rel="noopener">Zeyu Xiao</a>, <a href="https://houyiwen.github.io/" target="_blank" rel="noopener">Yiwen Hou</a>, <a href="https://linsats.github.io/" target="_blank" rel="noopener">Lin Shao</a></p>
         <p class="hero-affiliation">National University of Singapore (NUS)</p>
       </div>
       <nav class="teaser-nav" aria-label="Project sections">
@@ -559,6 +559,11 @@
       <section class="introduction abstract content" id="abstract-title" aria-labelledby="introduction-title">
         <h2 id="introduction-title">Introduction</h2>
         <p>Achieving human-like dexterous manipulation remains a central challenge in robotics. Learning from human hand–object interaction (HOI) datasets offers a promising pathway to diverse dexterous skills, yet existing physics-based approaches train specialist policies for individual trajectories, thereby limiting skill reuse at scale. We introduce <strong><span class="dex">Dex</span><span class="mimic">Mimic</span></strong>, a generalist dexterous hand–object tracking policy jointly trained across diverse HOI trajectories. Efficient joint training requires allocating each rollout to both an undertrained phase and a starting state that supports continued tracking. DexMimic realizes this insight through <strong>Value-Guided Reset Allocation</strong>, which adapts the initialization distribution online to prioritize difficult phases and select reset states with higher expected tracking returns.</p>
+        <figure class="paper-teaser">
+          <a href="static/assets/paper-teaser.webp" target="_blank" rel="noopener" aria-label="Open the paper teaser at full resolution">
+            <img src="static/assets/paper-teaser.webp" alt="DexMimic paper teaser showing one policy tracking multiple trajectories, tracking success and training efficiency comparisons, scaling results, and eight real-world dexterous skills." width="3200" height="1699" loading="lazy" decoding="async">
+          </a>
+        </figure>
       </section>
     </div>
   </main>
