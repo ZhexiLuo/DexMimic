@@ -3,7 +3,7 @@
 Project page for **DexMimic: A Generalist Dexterous Hand–Object Tracking Policy via Value-Guided Reset Allocation**.
 
 Zhexi Luo, Zhixuan Xu, Rui Yang, Zeyu Xiao, Yiwen Hou, Lin Shao<br>
-National University of Singapore (NUS)
+National University of Singapore (NUS) · RoboScience
 
 [Project page](https://zhexiluo.github.io/DexMimic/)
 
