@@ -13,6 +13,10 @@ h2[id], article[id] { scroll-margin-top: 32px; }
 .method-band, .results-band { padding-block: 40px; }
 .section-band > .content { padding-block: 0; }
 .opening-band > .tldr { padding-bottom: 30px; }
+.opening-band > .project-video { max-width: 1000px; padding-bottom: 32px; }
+.project-video > h2 { margin-bottom: 16px; }
+.project-video > video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; background: #fff; }
+.video-credit { margin-top: 10px; color: #706c65; font-size: 12px; line-height: 1.6; }
 .introduction > .video-player, .method > figure { max-width: 1000px; margin-inline: auto; }
 .introduction > .video-player { margin-top: 24px; }
 .introduction > .paper-teaser { max-width: 1000px; margin: 28px auto 0; }
