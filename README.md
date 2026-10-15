@@ -12,7 +12,7 @@ National University of Singapore (NUS) · RoboScience
 - `index.html`: project page, results, videos, and interactive trajectory gallery.
 - `static/css/` and `static/js/`: responsive layout and browser interactions.
 - `static/assets/`: paper, appendix, figures, videos, and Three.js trajectory data.
-- `static/assets/dexmimic-promo.mp4` and `dexmimic-promo.jpg`: narrated project video and poster, displayed between TL;DR and Pipeline with native playback controls.
+- `static/assets/dexmimic-promo.mp4` and `dexmimic-promo.jpg`: narrated project video and poster, displayed between TL;DR and Pipeline. `static/js/promo-video.js` adds glass controls on hover, keyboard focus, or touch.
 - `static/assets/trajectories/shared/readme.md`: viewer architecture and data contract.
 
 ## Local preview

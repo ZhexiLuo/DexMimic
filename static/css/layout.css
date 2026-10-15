@@ -15,7 +15,25 @@ h2[id], article[id] { scroll-margin-top: 32px; }
 .opening-band > .tldr { padding-bottom: 30px; }
 .opening-band > .project-video { max-width: 1000px; padding-bottom: 32px; }
 .project-video > h2 { margin-bottom: 16px; }
-.project-video > video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; background: #fff; }
+.project-video .video-player { position: relative; background: #fff; box-shadow: none; }
+.project-video video { height: auto; }
+.project-video .video-controls { position: absolute; left: 12px; right: 12px; bottom: 6px; gap: 10px; padding: 2px 8px; border: 1px solid #ffffffb3; border-radius: 12px; background: #eaf2f5b3; box-shadow: 0 4px 24px #19374d20; opacity: 0; pointer-events: none; transition: opacity 180ms ease; }
+.project-video .video-controls button { width: 32px; height: 32px; padding: 6px; }
+.project-video .video-controls[hidden], .project-video .video-controls button[hidden] { display: none; }
+.project-video .video-player:has(:focus-visible) .video-controls,
+.project-video .controls-visible .video-controls { opacity: 1; pointer-events: auto; }
+.project-video .video-player:fullscreen video { max-height: 100dvh; }
+.project-video .video-player:fullscreen .video-controls { background: #eaf2f5b3; }
+@media (hover: hover) and (pointer: fine) {
+  .project-video .video-player:hover .video-controls { opacity: 1; pointer-events: auto; }
+}
+@media (max-width: 640px) {
+  .project-video .video-controls { left: 8px; right: 8px; bottom: 8px; gap: 4px; padding: 3px 4px; border-radius: 12px; }
+  .project-video .video-controls button { width: 36px; height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-video .video-controls { transition: none; }
+}
 .video-credit { margin-top: 10px; color: #706c65; font-size: 12px; line-height: 1.6; }
 .introduction > .video-player, .method > figure { max-width: 1000px; margin-inline: auto; }
 .introduction > .video-player { margin-top: 24px; }
