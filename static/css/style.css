@@ -111,3 +111,10 @@ p { margin: 0; text-align: left; }
   .trajectory-card { transition: none; }
   .trajectory-card:hover { transform: none; }
 }
+
+.citation { padding-top: 34.5px; padding-bottom: 52.5px; }
+.citation-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.citation-header h2 { margin: 0; }
+.citation-copy { min-width: 154px; justify-content: center; cursor: pointer; }
+.citation-code { margin: 0; padding: 24px; overflow-x: auto; border: 1px solid #eeedea; border-radius: 12px; background: #fafaf9; font: inherit; font-size: 14px; }
+.citation-copy:focus-visible, .citation-code:focus-visible { outline: 2.25px solid #2878b5; outline-offset: 3.75px; }
